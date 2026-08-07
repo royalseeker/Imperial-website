@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     default: "Imperial Ecommerce LTD – UK Ecommerce Store & Services",
   },
   description: "Imperial Ecommerce LTD provides expert ecommerce services and a curated online store in the UK. Visit our eBay and TikTok shops or contact us to get started.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
