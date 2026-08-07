@@ -65,13 +65,34 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
             <div>
               <h3 className="text-white font-bold text-lg mb-4">Our Stores & Socials</h3>
-              <div className="flex gap-4">
-                <a href="#" aria-label="eBay Store" className="hover:text-amber-400 transition-colors"><Store /></a>
-                {/* Custom TikTok SVG or Icon */}
-                <a href="#" aria-label="TikTok Shop" className="hover:text-amber-400 transition-colors">
+              <div className="flex gap-4 items-center">
+                <a 
+                  href="https://www.ebay.co.uk/usr/imperialecomltd" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="eBay Store" 
+                  className="hover:text-amber-400 transition-colors"
+                >
+                  <Store />
+                </a>
+                <a 
+                  href="https://www.tiktok.com/@imperialecomuk" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="TikTok Shop" 
+                  className="hover:text-amber-400 transition-colors"
+                >
                   <span className="font-bold">TikTok</span>
                 </a>
-                <a href="#" aria-label="Instagram" className="hover:text-amber-400 transition-colors"><Instagram /></a>
+                <a 
+                  href="https://www.instagram.com/imperial_universeuk" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="Instagram" 
+                  className="hover:text-amber-400 transition-colors"
+                >
+                  <Instagram />
+                </a>
               </div>
             </div>
           </div>
