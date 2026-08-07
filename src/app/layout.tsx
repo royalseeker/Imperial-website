@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import { Store, Instagram, Mail, MapPin } from "lucide-react";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <Link href="/" className="flex items-center">
               <Image 
-                  src="/public/logo.png" 
+                  src="/logo.png" 
                   alt="Imperial Ecommerce Logo" 
                   width={64} 
                   height={64} 
