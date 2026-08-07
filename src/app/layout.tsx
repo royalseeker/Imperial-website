@@ -21,10 +21,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Navigation */}
         <header className="bg-white shadow-sm sticky top-0 z-50">
           <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2">
-              {/* Replace with actual logo image later */}
-              <div className="w-10 h-10 bg-blue-900 rounded-lg flex items-center justify-center text-amber-400 font-bold text-xl">IE</div>
-              <span className="font-bold text-xl tracking-tight text-blue-900">Imperial Ecommerce</span>
+            <Link href="/" className="flex items-center">
+              <Image 
+                  src="/logo.jpg" 
+                  alt="Imperial Ecommerce Logo" 
+                  width={64} 
+                  height={64} 
+                  className="rounded-md object-contain"
+                />
             </Link>
             <div className="hidden md:flex space-x-8 font-medium text-slate-600">
               <Link href="/" className="hover:text-blue-900 transition-colors">Home</Link>
