@@ -1,14 +1,34 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { ExternalLink } from "lucide-react";
 
-// Dummy product data
+// Update the name, price, and desc below to match your actual products!
 const products = [
-  { id: 1, name: "Handcrafted Leather Wallet", price: "£24.99", desc: "Durable, RFID-blocking minimalist wallet.", platform: "eBay", link: "#" },
-  { id: 2, name: "Wireless Earbuds Pro", price: "£45.00", desc: "Noise-cancelling with 24hr battery life.", platform: "TikTok", link: "#" },
-  { id: 3, name: "Ergonomic Laptop Stand", price: "£32.50", desc: "Adjustable aluminum stand for home offices.", platform: "eBay", link: "#" },
+  { 
+    id: 1, 
+    name: "Nitrile Diamond Grip Gloves", 
+    price: "£11.59", 
+    desc: "Nitrile Diamond Grip Gloves Extra Thick & Super Strong 8MIL -Orange", 
+    platform: "eBay", 
+    link: "https://ebay.io/m/BDLMNr" 
+  },
+  { 
+    id: 2, 
+    name: "Renault Radio Code", 
+    price: "£1.99", 
+    desc: "Renault Radio Unlock Code Service", 
+    platform: "eBay", 
+    link: "https://ebay.io/m/RxBMSG" 
+  },
+  { 
+    id: 3, 
+    name: "Seamless Finish Concealer Brush", 
+    price: "£10.79", 
+    desc: "Hourglass Vanish Seamless Finish Concealer Brush", 
+    platform: "TikTok", 
+    link: "https://shop.tiktok.com/gb/pdp/1729867661857036558" 
+  },
 ];
 
 export default function Shop() {
@@ -30,7 +50,7 @@ export default function Shop() {
             className="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-100 overflow-hidden flex flex-col"
           >
             <div className="aspect-square bg-slate-100 relative">
-              {/* Fallback box since we don't have actual images */}
+              {/* Fallback box for product image */}
               <div className="absolute inset-0 flex items-center justify-center text-slate-400">Image: {product.name}</div>
             </div>
             <div className="p-6 flex flex-col flex-grow">
