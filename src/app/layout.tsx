@@ -68,7 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-blue-900 text-sm text-center">
-            © {new Date().getFullYear()} Imperial Ecommerce LTD. All rights reserved.
+            © 2025 Imperial Ecommerce LTD. All rights reserved.
           </div>
         </footer>
       </body>
