@@ -92,9 +92,6 @@ Any pushes to the `main` branch will automatically trigger a build based on the 
 
 ## 📄 License & Copyright
 
-© 2026 Imperial Ecommerce LTD. All rights reserved.
+© 2026 Imperial Ecommerce LTD. All Rights Reserved.
+This repository is public for portfolio and viewing purposes only. No license is granted to use, modify, or distribute this code.
 
-
-```
-
-```
