@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, ShoppingBag, TrendingUp } from "lucide-react";
+import { ArrowRight, ShoppingBag, TrendingUp, Store } from "lucide-react";
 
 export default function Home() {
   return (
