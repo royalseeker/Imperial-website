@@ -60,7 +60,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <h3 className="text-white font-bold text-lg mb-4">Contact Info</h3>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center gap-2"><Mail size={16} /> info@imperialecommerce.co.uk</li>
-                <li className="flex items-center gap-2"><MapPin size={16} /> Middlesbrough, UK</li>
+               <li className="flex items-start gap-2">
+                <MapPin size={18} className="mt-0.5 flex-shrink-0 text-amber-400" /> 
+                <span>
+                  Galaxy Suite, D M Ackroyd<br />
+                  Douglas Street, Middlesbrough<br />
+                  TS4 2BH, UK
+                </span>
+                  </li>
               </ul>
             </div>
             <div>
