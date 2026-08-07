@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, MapPin } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -13,7 +13,7 @@ export default function Contact() {
         <div>
           <h1 className="text-4xl font-bold text-blue-950 mb-6">Get in Touch</h1>
           <p className="text-lg text-slate-600 mb-8">
-            Whether you are interested in our e-commerce consulting services, looking to start your own TikTok shop, or have a question about a product, we'd love to hear from you.
+            Whether you are interested in our e-commerce consulting services, looking to start your own eBay Store, TikTok shop, or have a question about a product, we'd love to hear from you.
           </p>
           
           <div className="space-y-6">
@@ -24,16 +24,6 @@ export default function Contact() {
               <div>
                 <p className="font-bold">Email Us</p>
                 <p>info@imperialecommerce.co.uk</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4 text-slate-700">
-              <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
-                <MapPin />
-              </div>
-              <div>
-                <p className="font-bold">Office Address</p>
-                <p>Middlesbrough, United Kingdom</p>
-                <p className="text-sm text-slate-500">Reg No: 16776358</p>
               </div>
             </div>
           </div>
