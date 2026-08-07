@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 
-// Update the name, price, and desc below to match your actual products!
 const products = [
   { 
     id: 1, 
@@ -11,7 +10,8 @@ const products = [
     price: "£11.59", 
     desc: "Nitrile Diamond Grip Gloves Extra Thick & Super Strong 8MIL -Orange", 
     platform: "eBay", 
-    link: "https://ebay.io/m/BDLMNr" 
+    link: "https://ebay.io/m/BDLMNr",
+    image: "/gloves.jpg" // Make sure this matches your uploaded file name!
   },
   { 
     id: 2, 
@@ -19,7 +19,8 @@ const products = [
     price: "£1.99", 
     desc: "Renault Radio Unlock Code Service", 
     platform: "eBay", 
-    link: "https://ebay.io/m/RxBMSG" 
+    link: "https://ebay.io/m/RxBMSG",
+    image: "/radio.jpg" // Make sure this matches your uploaded file name!
   },
   { 
     id: 3, 
@@ -27,7 +28,8 @@ const products = [
     price: "£10.79", 
     desc: "Hourglass Vanish Seamless Finish Concealer Brush", 
     platform: "TikTok", 
-    link: "https://shop.tiktok.com/gb/pdp/1729867661857036558" 
+    link: "https://shop.tiktok.com/gb/pdp/1729867661857036558",
+    image: "/brush.jpg" // Make sure this matches your uploaded file name!
   },
 ];
 
@@ -49,10 +51,15 @@ export default function Shop() {
             whileHover={{ y: -5 }}
             className="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-100 overflow-hidden flex flex-col"
           >
-            <div className="aspect-square bg-slate-100 relative">
-              {/* Fallback box for product image */}
-              <div className="absolute inset-0 flex items-center justify-center text-slate-400">Image: {product.name}</div>
+            {/* The grey placeholder has been replaced with the actual image tag here */}
+            <div className="aspect-square bg-slate-100 relative overflow-hidden">
+              <img 
+                src={product.image} 
+                alt={product.name} 
+                className="w-full h-full object-cover"
+              />
             </div>
+            
             <div className="p-6 flex flex-col flex-grow">
               <div className="flex justify-between items-start mb-2">
                 <h2 className="font-bold text-lg text-slate-900">{product.name}</h2>
