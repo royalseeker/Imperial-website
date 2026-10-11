@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import { Store, Instagram, Mail, MapPin } from "lucide-react";
 import Image from "next/image";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,22 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-09MJ997G94"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-09MJ997G94');
+          `}
+        </Script>
+      </head>
       <body className={`${inter.className} bg-slate-50 text-slate-900 flex flex-col min-h-screen`}>
         {/* Navigation */}
         <header className="bg-white shadow-sm sticky top-0 z-50">
